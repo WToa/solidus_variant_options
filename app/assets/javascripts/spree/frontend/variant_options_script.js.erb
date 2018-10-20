@@ -230,7 +230,7 @@ function VariantOptions(params) {
     function toggle(variants) {
         if (variant) {
             $('#variant_id, form[data-form-type="variant"] input[name$="[variant_id]"]').val(variant.id);
-            $('#product-price .price').removeClass('unselected').text(variant.price.replace('$','€'));
+            $('#product-price .price').removeClass('unselected').text(variant.price);
 
             
             var id = variant.id;
